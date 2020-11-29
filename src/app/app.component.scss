@@ -1,0 +1,129 @@
+
+/* Side Bar Starts */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 50px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #181818; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    // padding-top: 80px;
+  }
+
+.icon-menu {
+    display: none;
+}
+
+/* Style page content */
+.main {
+    margin-top: 40px;
+    margin-left: 50px; /* Same as the width of the sidebar */
+    background-color: #181818;
+    height: 100%;
+    min-height: fit-content;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+
+/* Nav Bar Starts */
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #181818;
+    height: 80px;
+    // margin-left: 50px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+
+    text-decoration: none;
+}
+
+/* Page content */
+.content {
+padding: 0px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+padding-top: 0px;
+}
+
+
+.sections-container {
+    margin-top: 80px;
+}
+
+.section {
+    height: 80px;
+    font-size: 24px;
+    border: #818181 solid;
+    border-top: none;
+    padding: 5px;
+}
+
+.section-first {
+    border-top: #818181 solid;
+}
+
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+    .sidenav {
+        padding-top: 8px;
+        //margin-top: 50px;
+    }
+    .sidenav a {font-size: 10px;}
+    #navbar { height: 50px;}
+
+    .icon-menu {
+        display: inline;
+    }
+
+    .sections-container {
+        margin-top: 12px;
+    }
+    
+    .section {
+        height: 60px;
+        border: #818181 solid;
+        border-top: none;
+    }
+
+    .section-first {
+        border-top: #818181 solid;
+    }
+    .section-icon {
+        margin-top: 5px;
+    }
+
+    .navbar-title {
+        padding-left: 20%;
+    }
+}
+
+

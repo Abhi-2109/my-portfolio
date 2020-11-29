@@ -1,0 +1,44 @@
+<div id="navbar">
+  <div class="navbar-title">
+    <a href="#home">Portfolio (By Abhishek Anand)</a>
+  </div>
+</div>
+<div>
+  <div class="sidenav">
+    <div class="icon-menu" style="font-size: 20px; margin-top: 16px; margin-left: 14px;">
+      <i class="fa fa-bars fa-lg" style="color:#818181;" aria-hidden="true"></i>
+    </div>
+    <div class="sections-container">
+      <div class="section section-first">
+        <div class="section-icon" (click)="redirectTo('PROFILE')">
+          <i class="fa fa-address-card fa-lg" style="color:#818181;" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-icon" (click)="redirectTo('EDUCATION')">
+          <i class="fa fa-university fa-lg" style="color:#818181;" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-icon">
+          <i class="fa fa-briefcase fa-lg" style="color:#818181;" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-icon">
+          <i class="fa fa-project-diagram fa-lg" style="color:#818181;" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-icon">
+          <i class="fa fa-bars fa-lg" style="color:#818181;" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="main">
+    
+    <router-outlet></router-outlet>
+  </div>
+</div>
